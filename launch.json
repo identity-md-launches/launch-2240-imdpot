@@ -1,0 +1,24 @@
+{
+  "kind": "custom_token",
+  "token": {
+    "contract": "IMDPotToken",
+    "name": "IMDPot",
+    "symbol": "IMDPOT",
+    "decimals": 18,
+    "constructorArgs": [],
+    "totalSupply": "1000000000000000000000000000"
+  },
+  "contracts": [],
+  "pool": {
+    "pairedCurrency": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+    "fee": 12500,
+    "tickSpacing": 60,
+    "initialPrice": "79228162514264337593543950336"
+  },
+  "economics": {
+    "poolBps": 8000,
+    "initialMarketCapWei": "2500000000000000000000",
+    "remainderTo": "0x6bf192ebef135e0f645e99d59d9bf44e7711606c"
+  },
+  "notes": "IMDPotToken is a fixed-supply ERC-20 with 18 decimals. Its argument-free constructor mints all 1,000,000,000 IMDPOT once to msg.sender, the factory at launch. Transfers move the exact specified amount without fees or burns. The token has no owner, minting after construction, pause, blacklist or upgrade functions. There are no application contracts or initialization calls. pool.initialPrice records provenance only; the deployer derives the opening price from economics.initialMarketCapWei and totalSupply."
+}
